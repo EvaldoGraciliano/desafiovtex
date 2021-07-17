@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+   <script src="content/bootstrapJS/jquery-2.1.1.min.js" type="text/javascript"></script>
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+   
 
-    <title>Quintanda online</title>
+    <title>Graciliano Digital</title>
   </head>
-  <body style="min-width:372px;">
 
+  <body style="min-width:372px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
        <div class="container">
          <a class="navbar-brand" href=""><strong>Graciliano Digital</strong></a>
@@ -45,34 +52,466 @@
           </div>
        </div>
     </nav>
+    
 
-    <header>
+    <div class="container">
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active marginbutton" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="marginbutton"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="marginbutton"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img\banner.png" class="d-block  mt-0  img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img\banner2.png" class="d-block  mt-0   img-fluid"  alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img\banner3.png" class="d-block  mt-0  img-fluid" alt="...">
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev hidden-button" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+  
+    
 
+    <main class="flex-fill">
+        <div class="container">
+            <div class=" row mt-5">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control " placeholder="Digite aqui o que procura">
+                            <button class="btn btn-primary">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar pelo menor preço</option>
+                                <option>Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block me-3">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item ">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">6</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
 
-    </header>
+            <hr mt-3>
 
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <a href="/produto.html">
+                            <img src="img/produtos/celular.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-header">
+                            R$ 1.654,73 
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> Samsung Galaxy</h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="img/produtos/fone.jfif" class="card-img-top">
+                        <div class="card-header">
+                            R$ 99.00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> Xiaomi redmi </h5>
+                            <p class="card-text truncar-3l">
+                               
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <a href="">
+                        <img src="img/produtos/monitor2.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-header">
+                           R$1.092,41
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Monitor Gamer LG </h5>
+                            <p class="card-text truncar-3l">
+                               
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                              Adicionar ao Carrinho
+                          </a>
+                          <small class="text-success"></small>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/iphone.jfif" class="card-img-top">
+                        <div class="card-header">
+                            R$ 6.000
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 11 pro</h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/roteadorfinal.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 75.00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Roteador Tp-link </h5>
+                            <p class="card-text truncar-3l">
+                               
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/controle.png" class="card-img-top">
+                        <div class="card-header">
+                            R$ 249,90
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Redragon Saturn </h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/pendrive.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 49.90
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sandisk 32GB</h5>
+                            <p class="card-text truncar-3l">
+                            
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/ssd2.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 249,90
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SSD Intel 256 GB</h5>
+                            <p class="card-text truncar-3l">
+                              
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/headfone2.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 299.00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Headfone </h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/placadevideo.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 599,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Radeon RX 590</h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/mouse2.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 249,90
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mouse Gamer</h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="btn btn-primary mt-2 d-block">
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card text-center bg-light">
+                        <a href="#" class="position-absolute end-0 p-2 text-danger">
+                            <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                        </a>
+                        <img src="/img/produtos/cadeira2.jpg" class="card-img-top">
+                        <div class="card-header">
+                            R$ 799.00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cadeira Gamer</h5>
+                            <p class="card-text truncar-3l">
+                                
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="btn btn-primary mt-2 d-block" >
+                                Adicionar ao Carrinho
+                            </a>
+                            <small class="text-success"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <main>
+            <hr class="mt-3">
 
-
-    </main>
+            <div class="row pb-3">
+                <div class="col-12">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar pelo menor preço</option>
+                                <option>Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block me-3">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">6</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        </main>
+   
 
 
     <footer class="border-top fixed-bottom text-muted bg-light">
-      <div class="row py-3">
+      
+      <div class="row py-2">
         <div class="col-12 col-md-4 text-center text-md-left">
           &copy; 2021 - Graciliano Digital
-
-
+        </div> 
+        
+        <div class="col-12 col-md-4 text-center text-md-left">
+          Política de Privacidade
         </div>
 
+        <div class="col-12 col-md-4 text-center text-md-left">
+          Sugestões
+        </div>
 
     </footer>
 
+    <!-- Modal  -->
 
+    <div class="modal fade mt-0" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary mt-0">Estamos em BLACK-FRIDAY</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-0">
+              <h4>Deseja 50% de desconto em todo site?</h4>
+              <h5 class="primary mt-4">Cadastre seu e-mail para ativar o desconto</h5>
 
+              <div class="input-group mb-3 mt-3">
+                <input type="email" class="form-control" placeholder="Digite aqui seu e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+               
+              </div>
 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sem desconto</button>
+              <button type="button" class="btn btn-primary">Ativar meu desconto</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+      <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#modal').modal('show');
+        });
+    </script>
+        
+
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
