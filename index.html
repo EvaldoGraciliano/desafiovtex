@@ -25,10 +25,10 @@
           <div class="navbar-collapse collapse">
             <ul class="navbar-nav flex-grow-1">
               <li class="nav-item">
-                <a href="#" class="nav-link text-white">Principal</a>
+                <!-- <a href="#" class="nav-link text-white">Principal</a> -->
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-white">Política de Privacidade</a>
+                <!-- <a href="#" class="nav-link text-white">Política de Privacidade</a> -->
               </li>
             </ul>
           <div class="align-self-end">
@@ -492,23 +492,21 @@
               <h5 class="primary mt-4">Cadastre seu e-mail para ativar o desconto</h5>
 
               <div class="input-group mb-3 mt-3">
-                <input type="email" class="form-control" placeholder="Digite aqui seu e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="email"  type="email" class="form-control" placeholder="Digite aqui seu e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
                
               </div>
 
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sem desconto</button>
-              <button type="button" class="btn btn-primary">Ativar meu desconto</button>
+              <button  onclick="salvar()" type="button" class="btn btn-primary">Ativar meu desconto</button>
             </div>
           </div>
         </div>
       </div>
 
-      <script type="text/javascript">
-        $(window).on('load', function() {
-            $('#modal').modal('show');
-        });
+      <script src="script.js">
+     
     </script>
         
 
